@@ -26,5 +26,5 @@
     "node": true,
     "jest": true
   },
-  "ignorePatterns": ["dist", "node_modules", "*.js"]
+  "ignorePatterns": ["dist", "node_modules", "*.js", "*.d.ts", "*.js.map", "*.d.ts.map"]
 }
