@@ -3,13 +3,22 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
 yarn.lock
 
 # Build output
 dist/
 build/
 *.tsbuildinfo
+
+# MongoDB compiled files
+src/mongodb/schemas/**/*.js
+src/mongodb/schemas/**/*.d.ts
+src/mongodb/schemas/**/*.js.map
+src/mongodb/schemas/**/*.d.ts.map
+mongodb/schemas/**/*.js
+mongodb/schemas/**/*.d.ts
+mongodb/schemas/**/*.js.map
+mongodb/schemas/**/*.d.ts.map
 
 # Prisma
 .env
