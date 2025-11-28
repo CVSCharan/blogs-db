@@ -68,13 +68,13 @@ NODE_ENV="development"
 **PostgreSQL (Neon, Supabase, etc.):**
 
 ```bash
-DATABASE_URL="postgresql://user:password@host.region.provider.com:5432/blogs_db?sslmode=require"
+DATABASE_URL="postgresql://<username>:<password>@host.region.provider.com:5432/blogs_db?sslmode=require"
 ```
 
 **MongoDB (Atlas, MongoDB Cloud):**
 
 ```bash
-MONGODB_URI="mongodb+srv://user:password@cluster.mongodb.net/blogs_db?retryWrites=true&w=majority"
+MONGODB_URI="mongodb+srv://<username>:<password>@cluster.mongodb.net/blogs_db?retryWrites=true&w=majority"
 ```
 
 ---

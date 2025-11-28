@@ -78,7 +78,7 @@ const pageView = await PageViewModel.create({
 Create a `.env` file in your service:
 
 ```env
-DATABASE_URL="postgresql://user:password@localhost:5432/blogs_db"
+DATABASE_URL="postgresql://<username>:<password>@localhost:5432/blogs_db"
 MONGODB_URI="mongodb://localhost:27017/blogs_db"
 NODE_ENV="development"
 ```
@@ -88,11 +88,13 @@ NODE_ENV="development"
 ### PostgreSQL (Prisma)
 
 **Auth Domain:**
+
 - `User` - User accounts
 - `Profile` - User profiles
 - `Session` - Active sessions
 
 **Content Domain:**
+
 - `Post` - Blog posts
 - `Category` - Post categories (hierarchical)
 - `Tag` - Post tags
@@ -101,23 +103,27 @@ NODE_ENV="development"
 - `Bookmark` - User bookmarks
 
 **Media Domain:**
+
 - `Media` - Uploaded files
 - `MediaVariant` - Image variants (thumbnail, medium, large)
 
 ### MongoDB (Mongoose)
 
 **Analytics:**
+
 - `PageViewModel` - Page view tracking
 - `AnalyticsEventModel` - Custom events
 - `UserActivityModel` - User activity timeline
 
 **Notifications:**
+
 - `NotificationModel` - Multi-channel notifications
 - `NotificationQueueModel` - Notification queue
 - `EmailLogModel` - Email delivery logs
 - `PushNotificationLogModel` - Push notification logs
 
 **Logs:**
+
 - `AuditLogModel` - Audit trail (2-year retention)
 - `SystemLogModel` - Application logs
 - `ErrorLogModel` - Error tracking
@@ -234,14 +240,7 @@ export class PrismaService {
 All Prisma and Mongoose types are exported:
 
 ```typescript
-import type {
-  User,
-  Post,
-  Comment,
-  IPageView,
-  INotification,
-  IAuditLog,
-} from '@blog-platform/db';
+import type { User, Post, Comment, IPageView, INotification, IAuditLog } from '@blog-platform/db';
 ```
 
 ## Connection Management
