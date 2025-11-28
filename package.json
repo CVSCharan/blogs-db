@@ -1,6 +1,6 @@
 {
   "name": "@cvscharan/blogs-db",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Shared database library for Blog Platform microservices",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
-    "mongoose": "^8.8.4"
+    "mongoose": "^8.9.3"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
@@ -47,7 +47,7 @@
     "prisma": "^5.22.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.9.3"
   },
   "publishConfig": {
     "access": "restricted",

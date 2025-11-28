@@ -1,5 +1,5 @@
-// This is your Prisma schema file
-// Learn more: https://pris.ly/d/prisma-schema
+// Prisma schema for PostgreSQL database
+// This is the single source of truth for the database structure
 
 generator client {
   provider = "prisma-client-js"

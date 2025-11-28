@@ -5,6 +5,7 @@ let prisma: PrismaClient | null = null;
 
 export function getPrismaClient(): PrismaClient {
   if (!prisma) {
+    // Prisma 7 uses prisma.config.ts for datasource URL configuration
     prisma = new PrismaClient({
       log: process.env.NODE_ENV === 'development' ? ['query', 'error', 'warn'] : ['error'],
     });
